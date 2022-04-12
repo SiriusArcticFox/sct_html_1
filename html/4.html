@@ -2,59 +2,45 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>html - урок №6</title>
+    <title>Двухколоночный макет</title>
     <style>
-        body { text-align: center; }
-        h5 { text-align: right; }
-        a.current { color: red !important; }
-        .quatrain > :first-child { color: #00adff; }
-        .quatrain > :nth-child(2) { color: #0089ff; }
-        .quatrain > :nth-child(3) { color: #004eff; }
-        .quatrain > :nth-child(4) { color: #0008ff;}
-        ul { text-align: left; }
-        hr { margin: 50px 0}
+        footer,
+        .container div {
+            margin: 5px 1%;
+            padding: 15px 10px;
+            box-sizing: border-box;
+        }
+        .container { overflow: hidden; }
+        .sidebar {
+            float: left;
+            max-width: 33%;
+            background: #ffead0;
+        }
+        .content {
+            float: right;
+            max-width: 63%;
+            background: #c8eaf5;
+        }
+        .sidebar,
+        .content {
+            width: 100%;
+            min-height: 120px;
+        }
+        footer { background: #e2edc1; }
     </style>
 </head>
 <body>
-    <ul>
-        <li><a href="../" class="current">Главная</a></li>
-        <li><a href="./1.html">Вариант №1 - текущий</a></li>
-        <li><a href="./2.html">Вариант №2</a></li>
-        <li><a href="./3.html">Вариант №3</a></li>
-        <li><a href="./4.html#v-te-dni">Вариант №4 - В те дни, когда уж нет надежд</a></li>
-        <li><a href="./4.html#esli-verit-pushkinu">Вариант №4 - Если верить Пушкину</a></li>
-        <li><a href="./4.html#o-plusah-i-minusah">Вариант №4 - О плюсах и минусах в человеке</a></li>
-    </ul>
+    <div class="container">
+        <div class="sidebar">
+            Боковая панель
+        </div>
+        <div class="content">
+            Содержимое
+        </div>
+    </div>
+    <footer>
+        Подвал
+    </footer>
 
-    <h2 id="v-te-dni"><i>В те дни, когда уж нет надежд</i></h2>
-    <p>
-        В те дни, когда уж нет надежд,<br/>
-        А есть одно воспоминанье,<br/>
-        Веселье чуждо наших вежд,<br/>
-        И легче на груди страданье.
-    </p>
-    <h5>Михаил Лермонтов</h5>
-
-    <hr/>
-
-    <h2 id="esli-verit-pushkinu"><i>Если верить Пушкину</i></h2>
-    <p>
-        Важен опыт невесёлый.<br/>
-        Но, быть может, прав поэт:<br/>
-        Горе – жизненная школа,<br/>
-        Счастье – университет.
-    </p>
-    <h5>Валентин Берестов</h5>
-
-    <hr/>
-
-    <h2 id="o-plusah-i-minusah"><i>О плюсах и минусах в человеке</i></h2>
-    <p>
-        О плюсах и минусах в человеке<br/>
-        Суди по тому, как он держит слово:<br/>
-        Правдив, значит, плюсы - его основа,<br/>
-        А лжив - значит, это уже навеки.
-    </p>
-    <h5>Эдуард Асадов</h5>
 </body>
 </html>

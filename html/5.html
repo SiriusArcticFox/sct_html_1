@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Использование float</title>
+    <style>
+        * { box-sizing: border-box; }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        ul li { margin-bottom: 20px; }
+        .white-blocks,
+        .container { overflow: hidden; }
+        .white-blocks { margin-bottom: 75px; }
+        .white-blocks div {
+            float: left;
+            padding: 15px;
+            max-width: 154px;
+            background: white;
+            margin-right: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .white-blocks img { margin-bottom: 20px;}
+        .sidebar {
+            float: left;
+            max-width: 28%;
+            background: #e8d9a9;
+        }
+        .content {
+            float: right;
+            max-width: 72%;
+            background: #ecc0a4;
+        }
+        .sidebar,
+        .content {
+            width: 100%;
+            padding: 10px;
+        }
+        footer {
+            color: white;
+            padding: 10px;
+            background: #9a5044;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Меню</h3>
+            <ul>
+                <li>Лучшие фотографии</li>
+                <li>По годам</li>
+                <li>По рейтингу</li>
+                <li>По комментариям</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="white-blocks">
+                <div>
+                    <img src="../img/1.jpg"/>
+                    Софийский собор
+                </div>
+                <div>
+                    <img src="../img/2.jpg"/>
+                    Польский котёл
+                </div>
+            </div>
+            <p>Новая строка</p>
+        </div>
+    </div>
+    <footer>
+        Подвал
+    </footer>
+</body>
