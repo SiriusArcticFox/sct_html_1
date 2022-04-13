@@ -1,0 +1,79 @@
+* { box-sizing: border-box; }
+
+.first-task,
+.fourth-task { border-collapse: collapse; }
+    .first-task th,
+    .fourth-task th { font-weight: 600; }
+    .first-task th,
+    .first-task td {
+        padding: 5px;
+        border: 2px solid;
+    }
+    .first-task tbody tr:hover { background: #ffcc00; }
+
+    .fourth-task th {
+        color: white;
+        background: #666;
+        text-align: left;
+    }
+
+    .fourth-task th,
+    .fourth-task td {
+        padding: 5px;
+        border: 1px solid black;
+    }
+
+    .fourth-task tbody tr > :first-child,
+    .fourth-task tbody tr > :nth-child(3) { background: #7cded5; }
+    .fourth-task tbody tr > :nth-child(3) { text-align: center; }
+    .fourth-task tbody tr > :nth-child(2),
+    .fourth-task tbody tr > :last-child { background: #fffd7a; }
+
+.second-task {
+    list-style: none;
+    text-align: center;
+}
+    .second-task li {
+        width: 50px;
+        height: 50px;
+        padding: 12px;
+        border-radius: 25px;
+        display: inline-block;
+        border: 5px solid white;
+    }
+    .second-task li:hover {
+        color: #ffa500;
+        background: #0000ff;
+        border-color: #ffa500;
+    }
+
+
+.third-task {
+    background: #f9f4ed;
+    font-family: sans-serif;
+}
+    .third-task ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+        .third-task .menu li {
+            padding: 20px 27px;
+            position: relative;
+        }
+        .third-task .menu > li { display: inline-block; }
+            .third-task .submenu {
+                left: 0;
+                top: 48px;
+                display: none;
+                text-align: left;
+                position: absolute;
+                background: #d8cfc0;
+            }
+            .third-task .menu > li:hover .submenu { display: block; }
+                .third-task .submenu li {
+                    min-width: 313px;
+                    border-bottom: 1px solid #c0bfbf;
+                }
+                .third-task .submenu > :last-child { border: none; }
+

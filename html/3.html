@@ -2,31 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>html - урок №7</title>
-    <style>
-       body {
-           color: white;
-           background: black;
-       }
-       .main {
-           overflow: hidden;
-           margin: 20px auto;
-           max-width: 1071px;
-           padding: 85px 10px;
-           border: 2px solid white;
-       }
-       .main > div {
-           width: 30%;
-           float: left;
-           padding: 0 1.5%;
-       }
-    </style>
+    <title>Выпадающее меню</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <div class="main">
-        <div>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty</div>
-        <div>through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</div>
-        <div>But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</div>
-    </div>
+<body class="third-task">
+    <ul class="menu">
+        <li>Home</li>
+        <li>
+            About
+            <ul class="submenu">
+                <li>About Us</li>
+                <li>Our Stores</li>
+                <li>Contact Us</li>
+            </ul>
+        </li>
+        <li>NEW</li>
+        <li>SALE</li>
+        <li>Clothes</li>
+    </ul>
 </body>
 </html>
