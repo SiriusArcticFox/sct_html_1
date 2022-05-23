@@ -5,11 +5,15 @@
     <title>Задание №3</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<body class="">
-    <div class="third-task">
-        <div class="light red"></div>
-        <div class="light yellow"></div>
-        <div class="light green"></div>
-    </div>
+<body class="third-task">
+    <form>
+        <h1>Checkout</h1>
+        <label>$10</label>
+        <div>
+            <input type="text" placeholder="Your name"><input type="text" placeholder="MM"><input type="text" placeholder="YY">
+            <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="4111 1111 1111 1111"><input type="text" placeholder="CVC">
+            <button>Purchase</button>
+        </div>
+    </form>
 </body>
 </html>

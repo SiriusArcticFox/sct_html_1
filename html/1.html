@@ -5,17 +5,24 @@
     <title>Задание №1</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <div class="first-task">
-        <div class="cube top-left"></div>
-        <div class="cube top-center"></div>
-        <div class="cube top-right"></div>
-        <div class="cube center-left"></div>
-        <div class="cube center-center"></div>
-        <div class="cube center-right"></div>
-        <div class="cube bottom-left"></div>
-        <div class="cube bottom-center"></div>
-        <div class="cube bottom-right"></div>
-    </div>
+<body class="first-task">
+    <form>
+        <label>Имя: <input type="text" placeholder="Введите имя"></label><br/>
+        <label>Фамилия: <input type="text" placeholder="Введите фамилию"></label><br/>
+        <div>
+            <label>Мужчина: <input type="radio" name="sex" value="man"></label>
+            <label>Женщина: <input type="radio" name="sex" value="woman"></label>
+        </div>
+
+        <div>
+            <label>О себе:</label>
+            <label><input type="checkbox" id="under-18"/>  Меньше 18</label>
+            <label><input type="checkbox" id="18-35">      От 18 до 35</label>
+            <label><input type="checkbox" id="over-35">    Больше 35</label>
+            <label><input type="checkbox" id="married">    Женат/-a</label>
+            <label><input type="checkbox" id="have-a-cat"> Есть кошка</label>
+        </div>
+        <button>Отправить</button>
+    </form>
 </body>
 </html>

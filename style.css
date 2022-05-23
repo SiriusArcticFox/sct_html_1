@@ -1,179 +1,123 @@
-* { box-sizing: border-box; }
-
-.first-task {
-    width: 300px;
-    height: 190px;
-    position: relative;
-    background: #ffffcd;
-    border: 2px solid black;
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-    .first-task .cube {
-        width: 38px;
-        height: 38px;
-        position: absolute;
-        background: #9acc99;
-    }
-    .first-task .cube.top-left {
-        top: 0;
-        left: 0;
-    }
-    .first-task .cube.top-right {
-        top: 0;
-        right: 0;
-    }
-    .first-task .cube.top-center {
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-    .first-task .cube.center-left {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-    }
-    .first-task .cube.center-center {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-    }
-    .first-task .cube.center-right {
-        top: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    .first-task .cube.bottom-left {
-        left: 0;
-        bottom: 0;
-    }
-    .first-task .cube.bottom-center {
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-    }
-    .first-task .cube.bottom-right {
-        right: 0;
-        bottom: 0;
-    }
-
-
-.second-task .cube {
-    width: 50px;
-    height: 50px;
-    position: absolute;
+:focus-visible { outline: none }
+button { cursor: pointer; }
+.first-task div,
+.first-task input[type=text]{ margin-bottom: 15px; }
+.first-task form > div:nth-of-type(2) > label::after {
+    content: ' ';
+    display: block;
 }
-    .second-task .cube.first {
-        top: 25px;
-        z-index: 2;
-        left: 25px;
-        background: #ff8888;
-    }
-    .second-task .cube.second {
-        top: 55px;
-        z-index: 1;
-        left: 55px;
-        background: #7e89eb;
-     }
-    .second-task .cube.third {
-        top: 85px;
-        z-index: 1;
-        left: 85px;
-        background: #4dee99;
-    }
-
-
-.third-task {
-    width: 250px;
-    height: 550px;
-    position: relative;
-    border: 1px solid black;
+.second-task {
+    font-size: 11px;
+    background: #75c25c;
 }
-    .third-task .light {
-        left: 0;
-        right: 0;
-        position: absolute;
-
-        width: 125px;
-        margin: auto;
-        height: 125px;
-        border-radius: 50%;
-        border: 1px solid black;
-    }
-    .third-task .light.red {
-        top: 70px;
-        background: red;
-    }
-    .third-task .light.yellow {
-        top: 210px;
-        background: yellow;
-    }
-    .third-task .light.green {
-        top: 355px;
-        background: green;
-    }
-
-.fourth-task {
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    position: relative;
-    background: #4dee99;
-}
-    .fourth-task div {
+    .second-task form {
+        padding: 35px;
+        color: #c9c9c9;
+        max-width: 290px;
         background: white;
-        position: absolute;
+        text-align: center;
+        margin: 100px auto 0;
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
     }
-    .fourth-task .left-eye,
-    .fourth-task .right-eye {
-        top: 90px;
-        width: 125px;
-        height: 125px;
-        border-radius: 50%;
-    }
-    .fourth-task .left-eye { left: 125px; }
-    .fourth-task .right-eye { right: 125px; }
-    .fourth-task .nose,
-    .fourth-task .mouth {
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
+        .second-task input,
+        .second-task button {
+            width: 100%;
+            border: none;
+            outline: none;
+            border-radius: 0;
+            margin-bottom: 10px;
+        }
+        .second-task input {
+            color: grey;
+            padding: 15px 10px;
+            background: #f2f2f2;
+        }
+            .second-task input::placeholder { color: #c9c9c9; }
+        .second-task button {
+            padding: 10px;
+            color: #c1eccb;
+            background: #00b03e;
+        }
+        .second-task a {
+            color: #00b03e;
+            text-decoration: none;
+        }
 
-    .fourth-task .nose {
-        top: 250px;
-        width: 90px;
-        height: 90px;
+.third-task { background: #dbe0eb; }
+    .third-task form {
+        font-size: 11px;
+        max-width: 265px;
+        border-radius: 5px;
+        position: relative;
+        background: #f3f6fa;
+        margin: 100px auto auto;
+        box-shadow: 0 0 3px rgba(0,0,0,.25);
     }
-    .fourth-task .mouth {
-        top: 435px;
-        width: 250px;
-        height: 25px;
-    }
+        .third-task label {
+            top: -10px;
+            right: -10px;
+            position: absolute;
 
-
-.fifth-task .title {
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-
-    margin: 0;
-    color: white;
-    padding: 15px;
-    font-weight: 400;
-    text-align: center;
-    background: #c4cd14;
-}
-.fifth-task .text {
-    width: 95%;
-    padding: 25px;
-    max-width: 800px;
-    margin: 70px auto 0;
-    border: 1px solid #c4cd14;
-}
+            width: 30px;
+            height: 30px;
+            color: white;
+            display: flex;
+            font-size: 12px;
+            border-radius: 50%;
+            align-items: center;
+            background: #ed5335;
+            border: 2px solid white;
+            justify-content: center;
+            box-shadow: 0 0 0 3px #ed5335,
+                        0 0 4px 3px rgba(0 0 0, .3);
+        }
+        .third-task h1{
+            margin: 0;
+            color: #3e678e;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-bottom: 1px solid #bfc6d6;
+            background: linear-gradient(#f3f6fa, #dee4ee);
+        }
+            .third-task div { padding: 14px; }
+                .third-task input {
+                    padding: 7px;
+                    font-size: 12px;
+                    margin-bottom: 14px;
+                    border: 1px solid #c3cde7;
+                }
+                .third-task input::placeholder { color: #a3abc2; }
+                .third-task input:focus,
+                .third-task input:active {
+                    border: 1px solid  #009fff;
+                    box-shadow: 0 0 2px #009fff;
+                }
+                .third-task input:nth-of-type(1) { max-width: 130px; }
+                .third-task input:nth-of-type(2),
+                .third-task input:nth-of-type(3),
+                .third-task input:nth-of-type(5) {
+                    max-width: 38px;
+                    margin-left: 13px;
+                }
+                .third-task input[type="tel"] {
+                    width: 181px;
+                    letter-spacing: 1px;
+                }
+                .third-task input,
+                .third-task button { border-radius: 5px; }
+                .third-task button {
+                    width: 100%;
+                    color: white;
+                    padding: 7px;
+                    font-weight: 600;
+                    border: 1px solid #0087f1;
+                    box-shadow: 0px 1px 0 1px #005ae2;
+                    background: linear-gradient(#5bc3fc, #0087f1);
+                }
